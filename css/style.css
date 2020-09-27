@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a {
+   color: black;
+   text-decoration: none;
+}
+button a:hover{
+
+   text-decoration: none; 
+}
+.page{
+    color: black;
+    margin: 5px;
+    text-decoration: none;
+}
+.active{
+    margin: 5px;
+    background-color: thistle;
+}
+.page-link{
+    margin: 5px;
+}
+.page-link:hover{
+  text-decoration: none;
+  /* margin: 5px; */
+}
