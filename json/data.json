@@ -1,0 +1,23 @@
+{
+    "data": [
+        {
+           "name":"pratik",
+           "address":"gadhinglaj",
+           "clas":"bcs"
+           
+        },
+        {
+            "name":"soham",
+            "address":"kolhapur",
+            "clas":"bcs"
+            
+         },
+         {
+            "name":"sandip",
+            "address":"pune",
+            "clas":"bcs"
+            
+         }
+       
+    ]
+}
