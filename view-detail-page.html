@@ -16,23 +16,24 @@
     <!-- Custom styles for this template -->
     <link href="css/modern-business.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/view-detail.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
     <div class="container" id="main_container">
         <!-- Navigation -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
-                <a class="navbar-brand" href="index.html">Garage Search Engine</a>
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-                    data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                <h5 class="navbar-brand">Garage Search Engine</h5>
+                <button href="index.html" class="navbar-toggler navbar-toggler-right" type="button"
+                    data-toggle="collapse">
+                    <a href="index.html"><i class="fa fa-home"></i></a>
                 </button>
+
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" href="index.html">Home</a>
+                            <a class="nav-link fa fa-home" href="index.html"> Home</a>
                         </li>
                     </ul>
                 </div>
@@ -42,64 +43,94 @@
     </div>
     <!-- Page Content -->
     <div class="container" style="display: none;">
-        <!-- Intro Content -->
-        <div class="row" id="loading_container">
+        <!-- Example row of columns -->
+        <div class="container" id="loading_container">
             <div class="row">
                 <div class="col-lg-6" id="banner-image">
                     <img class=" image img-fluid rounded mb-4" src="" alt="Loading..">
-                    <h6 class="contact top-left">Contact:dasdsadsadasdasd</h6>
-
                 </div>
                 <div class="col-lg-6">
-                    <h2 class="name">Garage Name</h2>
-                    <label>Services:</label>
-                    <p class="services">Description Comes Here
+                    <h2 class="name font-italic">Garage Name </h2>
+                    <p class="description">Description Comes Here Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Deleniti illum quidem officiis ad, odit nam, accusamus, cupiditate a consequuntur unde
+                        vero quia laudantium eos explicabo et error ex omnis! Accusantium!
+                    <h4 class="text-warning font-italic">Contact Now</h4>
+                    <p class="contact text-primary"></p>
+                    </p><br>
                 </div>
             </div>
-
             <!-- /.row -->
             <hr>
-            <!-- Our Customers -->
-            <div class="row footer-part">
-                <div class="col-lg-4 col-sm-4 mb-4" id="map-row">
-                    <div class="mapouter">
+
+            <div class="row">
+                <div class="col-md-4 ">
+                    <div class="mapouter m-auto justify-content-center">
                         <div class="gmap_canvas">
                             <div class="mapouter">
                                 <div class="gmap_canvas"><iframe width="200" height="200" id="gmap_canvas"
                                         src="https://maps.google.com/maps?q=pune&t=&z=13&ie=UTF8&iwloc=&output=embed"
                                         frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
                                         href="https://www.whatismyip-address.com/nordvpn-coupon/"></a></div>
+                                <style>
+                                    .mapouter {
+                                        position: relative;
+                                        text-align: right;
+                                        height: 200px;
+                                        width: 200px;
+                                    }
+                                    .gmap_canvas {
+                                        overflow: hidden;
+                                        background: none !important;
+                                        height: 200px;
+                                        width: 200px;
+                                    }
+                                </style>
                             </div><a href="https://www.whatismyip-address.com/nordvpn-coupon/"></a>
                         </div>
+                        <style>
+                            .mapouter {
+                                position: relative;
+                                text-align: right;
+                                height: 200px;
+                                width: 200px;
+                            }
+
+                            .gmap_canvas {
+                                overflow: hidden;
+                                background: none !important;
+                                height: 200px;
+                                width: 200px;
+                            }
+                        </style>
                     </div>
                 </div>
-                <div class="col-lg-4 col-sm-4 mb-4">
-                    <h5>Opening Hours</h5>
-                    <p>Monday</p>
-                    <p>tuesday</p>
-                    <p>wednesday</p>
-                    <p>Thursday</p>
-                    <p>friday</p>
-                    <p>saturday</p>
+                <div class="col-md-4 text-center">
+                    <h2>Opening Hours</h2>
+                    <p>Monday : <span class="time">10:00pm to 07:00pm</span></p>
+                    <p>Tuesday : <span class="time">10:00pm to 07:00pm</span></p>
+                    <p>Wednesday : <span class="time">10:00pm to 07:00pm</span></p>
+                    <p>Thursday : <span class="time">10:00pm to 07:00pm</span></p>
+                    <p>Friday : <span class="time">10:00pm to 07:00pm</span></p>
+                    <p>Saturday : <span class="time">10:00pm to 07:00pm</span></p>
+                    <p>Sunday : <span class="time">10:00pm to 07:00pm</span></p>
                 </div>
-                <div class="col-lg-4 col-sm-4 mb-4">
-                    <h5>Contact Us</h5>
-                    <h6>Address</h6>
-                    <p class="address">bdikasbkd aisbd</p>
-                    <h6>Contact</h6>
-                    <p class="contact">1236548963</p>
-                    <h6>Email </h6>
-                    <p class="email">Sample@gmail.com</p>
+                <div class="col-md-4 text-center">
+                    <h2>Visit now</h2>
+                    <h6>Address : </h6>
+                    <p class="address"></p>
+                    <h6>City : </h6>
+                    <p class="city"></p>
                 </div>
             </div>
         </div>
+
     </div>
     <!-- /.container -->
 
     <!-- Footer -->
     <footer class="py-5 bg-dark">
         <div class="container">
-            <p class="m-0 text-center text-white">Copyright &copy; Your Website 2020</p>
+            <p class="m-0 text-center text-white">Copyright &copy; Garage Search Engine 2020</p>
         </div>
         <!-- /.container -->
     </footer>
