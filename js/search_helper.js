@@ -33,6 +33,15 @@ function handleResult(result){
      
    var userList = new List('mylist',options,result);
    
+   userList.on('updated', function (list) {
+		if (list.matchingItems.length > 0) {
+			$('.no-result').hide()
+		} else {
+			$('.no-result').show()
+		}
+	});
+   
+
    $('#clear-btn').click(function() {
     $('#search').val('');
     userList.search();
