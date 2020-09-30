@@ -1,4 +1,21 @@
-.image{
-  height: 250px;
-  width: 750px;
+.pagination li {
+  display:inline-block;
+  padding:5px;
+  color:black;
+  border:1px solid grey;
+  border-radius: 5px;
+  margin: 2px;
+
+}
+.pagination li a{
+  color:black;
+  text-decoration:none;
+}
+.active{
+  background-color: lightslategray;
+}
+
+.btn a{
+  color: black;
+  text-decoration: none;
 }
