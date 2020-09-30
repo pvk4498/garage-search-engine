@@ -27,7 +27,7 @@ function handleResult(result){
                     { name: 'link', attr: 'href' }
                   ],
         item:'myitem',
-        page: 3,
+        page: 4,
         pagination: true
       };
      
