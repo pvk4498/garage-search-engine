@@ -8,102 +8,87 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Garage</title>
+  <title>Garage Search Engine</title>
 
   <!-- Bootstrap core CSS -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <link href="css/style.css" rel="stylesheet">
 
   <!-- Custom styles for this template -->
   <link href="css/modern-business.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+  
 </head>
 
 <body>
-<div class="container" id="mylist">
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-      <a class="navbar-brand" href="index.html">Garage Search Engine</a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="fa fa-search" aria-hidden="true"></i>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <input type="search" name="search"  class="search form-control" placeholder="Search Here ....">
-          </li>
-        </ul>
+  <div class="container" id="mylist">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Start Bootstrap</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+          data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <i class="fa fa-search"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <input type="search" name="search" class="search form-control" placeholder="Search Here ....">
+            </li>
+          </ul>
+        </div>
       </div>
+    </nav>
+    <!--cards  --><br>
+    <div class="row list">
+
     </div>
-  </nav>
-  <!-- navigation ends -->
-  
-   <!-- cards -->
-   &nbsp;
-   <div class="container">
-     <div class="list">
-       
-     </div>
-   </div>
+    <!-- Pagination -->
+    <ul class="pagination justify-content-center">
+      <li class="active">
+        <a class="active">
 
-   <!-- cards ends  -->
-
-   <!-- pagination -->
-
-   <nav aria-label="Page navigation example">
-    <ul class="pagination">
-      <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-      <li class="page-item"><a class="page-link" href="#">1</a></li>
-      <li class="page-item"><a class="page-link" href="#">2</a></li>
-      <li class="page-item"><a class="page-link" href="#">3</a></li>
-      <li class="page-item"><a class="page-link" href="#">Next</a></li>
+        </a>
+      </li>
     </ul>
-  </nav>
-
-   <!--  pagination ends -->
-</div>
-
-
+  </div>
 
   <!-- Page Content -->
-  <div class="container" style="display: none;">
-    <!-- Blog Post -->
-    <div class="card mb-4" id="myitem">
-      <div class="card-body">
-        <div class="row">
-          <div class="col-lg-7">
-              <img class="image img-fluid rounded" src="" alt="">
-          </div>
-          <div class="col-lg-4" >
-            <h2 class=" name card-title">Name</h2>
-            <p class=" address card-text">address</p>
-            <p class=" city card-text">City</p>
-            <p class=" contact card-text">Contact</p>
-            <a href="#" class="link btn btn-primary">View Details &rarr;</a>
-          </div>
+  <div class="row" style="display: none;">
+    <div class="col-lg-4 col-sm-6 portfolio-item d-flex" id="myitem">
+      <div class="card h-100">
+        <a href="#"><img class="image card-img-top" height="350px" src="http://placehold.it/700x400" alt=""></a>
+        <div class="card-body">
+          <h4 class="name card-title"> </h4>
+          <p class=" address card-text"></p>
+          <p class=" city card-text"></p>
+          <p class=" contact card-text"></p>
+          <button type="submit" class="btn btn-secondary"><a href="view-detail-page.html" class="link">View Details</a></button>
         </div>
       </div>
     </div>
-
-  </div> 
+  </div>
+  <!-- /.container -->
 
   <!-- Footer -->
   <footer class="container py-5 bg-dark">
     <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2020</p>
+      <p class="m-0 text-center text-white">Copyright &copy; Garage Search Engine 2020</p>
     </div>
     <!-- /.container -->
   </footer>
 
   <!-- Bootstrap core JavaScript -->
+
   <script src="jquery/jquery.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+
 
   <script src="js/search_helper.js"></script>
-
 </body>
 
 </html>
