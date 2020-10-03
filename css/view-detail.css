@@ -1,11 +1,5 @@
-body{
-	margin-top: 0px;
-}
-#banner-img{
-	position: relative;
-  text-align: center;
-  color: white;
-}
+
+
 .top-left {
   position: absolute;
   top: 8px;
@@ -55,4 +49,13 @@ body{
   margin: 0;
 }
 
-
+.details{
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  justify-content: center;
+}
+.list{
+  margin: 0px;
+  padding: 0;
+}
