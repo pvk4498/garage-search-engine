@@ -17,79 +17,89 @@
   <!-- Custom styles for this template -->
   <link href="css/modern-business.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  
+
 </head>
 
 <body>
-  <div class="container" id="mylist">
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">Garage Search Engine</a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-          data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-          aria-label="Toggle navigation">
-          <i class="fa fa-search"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <input type="search" name="search" class="search form-control" placeholder="Search Here ....">
-            </li>
-          </ul>
+<div class="shivaytech77" id="mylist">
+  <!-- Navigation -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Garage Search Engine</a>
+      <!--<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+              data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+              aria-label="Toggle navigation">
+        <i class="fa fa-search"></i>
+      </button>-->
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <input type="search" name="search" class="search form-control" placeholder="Search Here ....">
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container"  >
+    </br></br>
+    <!-- Page Heading/Breadcrumbs-->
+    <h4 class="mt-4 mb-3 ">
+      <small></small>
+    </h4>
+
+
+    <!--cards-->
+    <div class="row list" >
+    </div>
+    <div class="no-result" style="display:none">No Results</div>
+    <div style="display:none;">
+      <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item" id="myitem">
+        <div class="card h-60">
+          <a href="#"><img class="image card-img-top" src="http://placehold.it/700x400" alt=""></a>
+          <div class="card-body">
+            <h6 class="name card-title"> </h6>
+            <h6 class="address card-subtitle mb-2 text-muted"></h6>
+            <h6 class="city card-subtitle mb-2 text-muted"></h6>
+            <h6 class="contact card-subtitle mb-2 text-muted"></h6>
+            <button type="submit" class="btn btn-secondary"><a href="view-detail-page.html" class="link">View Details</a></button>
+          </div>
         </div>
       </div>
-    </nav>
-    <!--cards  --><br>
-    <div class="row list">
-
+      <!-- Page Content -->
     </div>
+
     <!-- Pagination -->
     <ul class="pagination justify-content-center">
       <li class="active">
         <a class="active">
-
         </a>
       </li>
     </ul>
+    <!-- /.container -->
+
   </div>
+</div>
 
 
-  <!-- Page Content -->
-  <div class="row" style="display: none;">
-    <div class="col-lg-4 col-sm-6 portfolio-item d-flex" id="myitem">
-      <div class="card h-100">
-        <a href="#"><img class="image card-img-top" height="350px" src="http://placehold.it/700x400" alt=""></a>
-        <div class="card-body">
-          <h4 class="name card-title"> </h4>
-          <p class=" address card-text"></p>
-          <p class=" city card-text"></p>
-          <p class=" contact card-text"></p>
-          <button type="submit" class="btn btn-secondary"><a href="view-detail-page.html" class="link">View Details</a></button>
-        </div>
-      </div>
-    </div>
+
+<!-- Footer -->
+<footer class="py-5 bg-dark">
+  <div class="container">
+    <p class="m-0 text-center text-white">Copyright &copy; Garage Search Engine 2020</p>
   </div>
   <!-- /.container -->
+</footer>
 
-  <!-- Footer -->
-  <footer class="container py-5 bg-dark">
-    <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; Garage Search Engine 2020</p>
-    </div>
-    <!-- /.container -->
-  </footer>
+<!-- Bootstrap core JavaScript -->
 
-  <!-- Bootstrap core JavaScript -->
+<script src="jquery/jquery.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
 
-  <script src="jquery/jquery.min.js"></script>
-  <script src="js/bootstrap.bundle.min.js"></script>
-
-  <script src="js/bootstrap.bundle.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
 
 
-  <script src="js/search_helper.js"></script>
+<script src="js/search_helper.js"></script>
 </body>
 
 </html>
