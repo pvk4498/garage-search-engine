@@ -23,7 +23,7 @@ function getId(){
   
 
    
-  var url=`https://pvk4498.github.io/webapps/garage%20web%20app/json/${id}.json`;
+  var url=`https://pvk4498.github.io/garage-search-engine/json/${id}.json`;
   var data = get_json_Data(url,handleResult);
   
   function handleResult(result){
