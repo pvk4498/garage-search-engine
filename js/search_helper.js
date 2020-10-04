@@ -9,7 +9,7 @@ function get_json_Data(url,callback){
   return result;
 }
 
-var url='https://pvk4498.github.io/garage-search-engine/json/data.json';
+var url='https://pvk4498.github.io/garage-search-engine/data/main-json.json';
 var data = get_json_Data(url,handleResult);
 
 function handleResult(result){
@@ -23,6 +23,7 @@ function handleResult(result){
                     'address'
                     ,'city'
                     ,'contact',
+                    'price',
                     { name: 'image', attr: 'src' },
                     { name: 'link', attr: 'href' }
                   ],
