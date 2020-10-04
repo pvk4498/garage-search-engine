@@ -1,0 +1,113 @@
+[
+   {
+       
+      "name":"A1 Garage",
+      "address":"pimpri",
+      "city":"pune",
+      "contact":"9087654543",
+      "price":"₹500/service",
+       "image":"images/img.jpg",
+       "link":"view-detail-page.html?id=1"
+   },
+   {
+       "id":"2",
+      "name":"Mane Garage",
+      "address":"kothrud",
+      "city":"pune",
+      "contact":"908766565",
+      "price":"₹400/service",
+       "image":"images/img2.jpg",
+       "link":"view-detail-page.html?id=2"
+       
+   },{
+       "id":"3",
+      "name":"saha Garage",
+      "address":"pimpri",
+      "city":"pune",
+      "contact":"2687654543",
+      "price":"₹300/service",
+       "image":"images/img.jpg",
+       "link":"view-detail-page.html?id=3"
+   },
+   {
+       "id":"4",
+      "name":"Shine Garage",
+      "address":"karve nagar",
+      "city":"pune",
+      "contact":"2687654543",
+      "price":"₹350/service",
+       "image":"images/img.jpg",
+       "link":"view-detail-page.html?id=4"
+   },
+    {
+        "id":"5",
+      "name":"Sadguru Garage",
+      "address":"wakad",
+      "city":"pune",
+      "contact":"9687654543",
+      "price":"₹550/service",
+        "image":"images/img.jpg",
+        "link":"view-detail-page.html?id=5"
+   },
+   {
+       "id":"6",
+      "name":"Ram Garage",
+      "address":"wakad",
+      "city":"pune",
+      "contact":"9687654543",
+      "price":"₹450/service",
+       "image":"images/img.jpg",
+       "link":"view-detail-page.html?id=6"
+   },
+   {
+       "id":"7",
+    "name":"Mauli Garage",
+      "address":"Kathraj",
+      "city":"pune",
+      "contact":"6958654543",
+      "price":"₹400/service",
+       "image":"images/img.jpg",
+       "link":"view-detail-page.html?id=7"
+   },
+   {
+       "id":"8",
+    "name":"Wheels Garage",
+      "address":"karve nagar",
+      "city":"pune",
+      "contact":"6958654543",
+      "price":"₹600/service",
+       "image":"images/img.jpg",
+       "link":"view-detail-page.html?id=8"
+   },
+   {
+       "id":"9",
+    "name":"Patne Garage",
+      "address":"Wagholi",
+      "city":"pune",
+      "contact":"6958654543",
+      "price":"₹450/service",
+       "image":"images/img.jpg",
+       "link":"view-detail-page.html?id=9"
+   },
+   {
+       "id":"10",
+    "name":"Unity Garage",
+      "address":"swagate",
+      "city":"pune",
+      "contact":"6958654543",
+      "price":"₹250/service",
+       "image":"images/img.jpg",
+       "link":"view-detail-page.html?id=10"
+   },
+   {
+      "id":"11",
+   "name":"Sham Garage",
+     "address":"katraj",
+     "city":"pune",
+     "contact":"8968654543",
+     "price":"₹550/service",
+      "image":"images/img.jpg",
+      "link":"view-detail-page.html?id=11"
+  }
+   
+]
