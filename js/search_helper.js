@@ -9,7 +9,7 @@ function get_json_Data(url,callback){
   return result;
 }
 
-var url='https://pvk4498.github.io/garage-search-engine/data/main-json.json';
+var url='https://pvk4498.github.io/garage-search-engine/data/data.json';
 var data = get_json_Data(url,handleResult);
 
 function handleResult(result){
