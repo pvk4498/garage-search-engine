@@ -56,8 +56,8 @@
       "price":"₹550/service",
         "image":"images/img.jpg",
         "link":"view-detail-page.html?id=5",
-        "longitude":"73.585648",
-       "latitude":"20.797701"
+        "longitude":"73.765274",
+       "latitude":"18.598944"
    },
    {
        "id":"6",
@@ -68,8 +68,8 @@
       "price":"₹450/service",
        "image":"images/img.jpg",
        "link":"view-detail-page.html?id=6",
-       "longitude":"73.585648",
-       "latitude":"20.797701"
+       "longitude":"73.765274",
+       "latitude":"18.598944"
    },
    {
        "id":"7",
