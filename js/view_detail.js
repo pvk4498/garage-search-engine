@@ -37,7 +37,8 @@ function getId(){
                       'city',
                       'contact',
                       'services' ,
-                      { name: 'image', attr: 'src' }             
+                      { name: 'image', attr: 'src' } ,            
+                      { name: 'map', attr: 'href' }             
                     ],
           item:'loading_container',
           page: 3,
