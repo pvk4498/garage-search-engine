@@ -99,3 +99,19 @@ function calculateDistance(lat1, lon1, lat2, lon2, unit) {
   if (unit == "N") { dist = dist * 0.8684 }
   return dist
 }
+
+
+let dropdown = $('#city_dropdown');
+let url1="https://pvk4498.github.io/garage-search-engine/data/city_list.json"
+dropdown.empty();
+
+dropdown.append('<option selected="true" disabled>Select Your City</option>');
+dropdown.prop('selectedIndex', 0);
+
+// Populate dropdown with list of provinces
+$.getJSON(url1, function (data) {
+  $.each(data, function (key, entry) {
+    console.log(data);
+    dropdown.append($('<option class="option">'+ entry +'</option>'));
+  })
+});
