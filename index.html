@@ -24,9 +24,58 @@
   <div class="container" id="mylist">
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
         <a class="navbar-brand" href="index.html">Garage Search Engine</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+          data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="" data-toggle="modal" data-target="#exampleModal">Register Your Garage</a>
+            </li>
+            <li class="nav-item dropdown">
+              <select class="btn-group form-control" id="city_dropdown">
+              
+              </select>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
     <br>
+
+    <!-- register modal -->
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Hurry Up ! Register Your Garage Now</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <iframe
+              src="https://docs.google.com/forms/d/e/1FAIpQLSet84TTwcwfl-6Qg0ERltEUOvipgg2Ve9pWtx2YMhRDO1j2CA/viewform?embedded=true"
+              width="450" height="855" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
     <!-- Page Heading/Breadcrumbs-->
     <div class="container search-box fixed-top">
       <input type="search" name="search" placeholder="Search Here..." style="background-color: rgb(231, 225, 225);"
@@ -67,7 +116,7 @@
   <!-- Page Content -->
 
   <!-- Footer -->
-  <footer class="container py-5 bg-dark">
+  <footer class="py-5 bg-dark">
     <div class="container">
       <p class="m-0 text-center text-white">Copyright &copy; Garage Search Engine 2020</p>
     </div>
