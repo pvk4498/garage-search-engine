@@ -1,6 +1,4 @@
-
-
-.btn a{
+.btn a {
   color: black;
   text-decoration: none;
 }
@@ -8,7 +6,6 @@
 .pagination-wrap {
   user-select: none;
   display: flex;
-  
 }
 
 .pagination-wrap a {
@@ -20,70 +17,88 @@
   padding: 0;
   margin: 0;
   list-style-type: none;
-    
-  }
+}
 
+.pagination-layout .active a.page {
+  background-color: #3498DB;
+  color: #fff;
+}
 
-  .pagination-layout .active a.page {
-      background-color: #3498DB;
-      color: #fff;
-    }
- .pagination-layout a.page:hover{
-        color: #3498DB;
-        background-color: transparent;
-      }
-
-
-
-
-
-  .pagination-layout li{
-    width: 24px;
-    margin: 0 1px;
-     
-    }
-
-    a.page {
-      height: 24px;
-      width: 24px;
-      display: block;
-      border: none;
-      line-height: 24px;
-      padding: 0;
-      text-align: center;
-      border-radius: 50%;
-      font-weight: 700;
-      color: #3498DB;
-      background-color: transparent;
-  }
-
-  a.page:hover {
-    background-color: #3498DB;
-    color: #fff;
-  }
-
-  .pagination-next, .pagination-prev {
+.pagination-layout a.page:hover {
   color: #3498DB;
-  }
-  .pagination-next:hover{
-    color: lighten(#3498DB, 20%);
-  }
-  .pagination-next:hover{
-    color: #D8D8D8;
-  }
+  background-color: transparent;
+}
 
-  .m5{
-    margin-top: 6rem;
-  }
-  .m4{
-    margin-top: 4rem;
-  }
+.pagination-layout li {
+  width: 24px;
+  margin: 0 1px;
+}
 
+a.page {
+  height: 24px;
+  width: 24px;
+  display: block;
+  border: none;
+  line-height: 24px;
+  padding: 0;
+  text-align: center;
+  border-radius: 50%;
+  font-weight: 700;
+  color: #3498DB;
+  background-color: transparent;
+}
 
-  .search-box{
-    display: flex;
-    margin: 50px auto;
-    justify-content: center;
-    
-  }
- 
+a.page:hover {
+  background-color: #3498DB;
+  color: #fff;
+}
+
+.pagination-next, .pagination-prev {
+  color: #3498DB;
+}
+
+.pagination-next:hover {
+  color: lighten(#3498DB, 20%);
+}
+
+.pagination-next:hover {
+  color: #D8D8D8;
+}
+
+.m5 {
+  margin-top: 6rem;
+}
+
+.m4 {
+  margin-top: 4rem;
+}
+
+.search-box {
+  z-index: 1;
+  display: flex;
+  margin: 50px auto;
+  justify-content: center;
+}
+
+.btn-group {
+  margin: 5px;
+  border: 1px solid wheat;
+  border-radius: 20px;
+  color: white;
+  background: transparent;
+}
+
+.navbar {
+  z-index: 2;
+}
+
+.nav-link {
+  font: 10px;
+  text-decoration: none;
+}
+.option{
+  background: transparent;
+  padding: 5px;
+  border-radius: 20px;
+  color: black;
+}
