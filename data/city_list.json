@@ -1,4 +1,6 @@
 {
-    "cities":["Pune"],
-             ["Mumbai"]
+    "cities":[
+               "Pune",
+               "Mumbai"       
+             ]
 }
