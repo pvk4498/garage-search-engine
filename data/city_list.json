@@ -1,4 +1,4 @@
-[         
-            {"Pune"},
-            {"Mumbai"}
-]
+{
+    "city":["Pune"],
+    "city":["Mumbai"]
+}
