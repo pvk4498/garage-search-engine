@@ -130,6 +130,18 @@
       "link":"view-detail-page.html?id=11",
       "longitude":"73.867744",
        "latitude":"18.457533"
-  }
+  },
+  {
+      "id":"12",
+   "name":"Disoza Autocare",
+     "address":"Dadar",
+     "city":"Mumbai",
+     "contact":"8968696583",
+     "price":"₹650/service",
+      "image":"images/img.jpg",
+      "link":"view-detail-page.html?id=12",
+      "longitude":"72.84241780000002",
+       "latitude":"19.021324"
+  } 
    
 ]
