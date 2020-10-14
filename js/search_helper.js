@@ -17,33 +17,39 @@ let i = 0;
 function getLocation(result) {
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(
-    function (position) {
+      function (position) {
 
-      for (i in result) {
+        for (i in result) {
 
-        let current_lat = position.coords.latitude;
-        let current_lon = position.coords.longitude;
-        let json_lat = result[i].latitude;
-        let json_lon = result[i].longitude;
+          let current_lat = position.coords.latitude;
+          let current_lon = position.coords.longitude;
+          let json_lat = result[i].latitude;
+          let json_lon = result[i].longitude;
 
-        result[i]["distance"] = calculateDistance(current_lat, current_lon, result[i]["latitude"], result[i]["longitude"], "K");
+          result[i]["distance"] = calculateDistance(current_lat, current_lon, result[i]["latitude"], result[i]["longitude"], "K");
 
-      }
-      // console.log("before sorting");
-      // console.dir(result);
+        }
+        // console.log("before sorting");
+        console.dir(result);
 
-      result.sort(function (a, b) {
-                return a.distance - b.distance;
-              });
+        result.sort(function (a, b) {
+          return a.distance - b.distance;
+        });
 
-      
-      displayData(result);
+        // populate_dropdown(result);
+        populate_dropdown();
 
-    }, function (error) {
-      // function is called when the user denies the permission for location
-      console.log("user denied the permission");
-      displayData(result);
-    });
+        // let option = document.getElementById('city_dropdown').value;
+        // console.log(option);
+
+        displayData(result);
+
+
+      }, function (error) {
+        // function is called when the user denies the permission for location
+        console.log("user denied the permission");
+        displayData(result);
+      });
 
   } else {
     console.log("Geolocation is not supported by this browser.");
@@ -51,36 +57,99 @@ function getLocation(result) {
 
 }
 
-function displayData(result){
+
+function populate_dropdown() {
+
+  let dropdown = $('#city_dropdown');
+  let url1 = "https://pvk4498.github.io/garage-search-engine/data/city_list.json"
+  dropdown.empty();
+
+
+  dropdown.prop('selectedIndex', 0);
+
+  $.getJSON(url1, function (data) {
+    $.each(data, function (key, entry) {
+      // let values = data;
+      dropdown.append($('<option>' + entry.city + '</option>'));
+    })
+
+
+  });
+}
+
+
+
+
+
+
+
+
+
+// let option = document.getElementById('city_dropdown').value;
+// console.log(option +" "+ result.city );
+
+// let matched_data = result.filter(function (item) {
+//   return result.city === option;
+// });
+
+// console.log(matched_data);
+// result = matched_data;
+// displayData(result);
+
+
+
+// // // Populate dropdown with list of provinces
+// // $.getJSON(url1, function (data) {
+// //   $.each(data, function (key, entry) {
+// //     console.log(data);
+// //     dropdown.append($('<option class="option">' + entry + '</option>'));
+// //   })
+// // });
+
+// let arr = [];
+
+// function myFunction() {
+//   // let data1=get_json_Data(url,myFunction);
+
+
+// }
+
+
+
+
+
+
+
+function displayData(result) {
 
   var options = {
-        valueNames: [
-          'id',
-          'name',
-          'address'
-          , 'city'
-          , 'contact',
-          'price',
-          { name: 'image', attr: 'src' },
-          { name: 'link', attr: 'href' }
-        ],
-        item: 'myitem',
-        page: 10,
-        pagination: true
-      };
-      var userList = new List('mylist', options, result);
+    valueNames: [
+      'id',
+      'name',
+      'address',
+      'city',
+      'contact',
+      'price',
+      { name: 'image', attr: 'src' },
+      { name: 'link', attr: 'href' }
+    ],
+    item: 'myitem',
+    page: 10,
+    pagination: true
+  };
+  var userList = new List('mylist', options, result);
 
-      userList.on('updated', function (list) {
-        if (list.matchingItems.length > 0) {
-          $('.no-result').hide()
-        } else {
-          $('.no-result').show()
-        }
-      });
-      $('#clear-btn').click(function () {
-        $('#search').val('');
-        userList.search();
-      });
+  userList.on('updated', function (list) {
+    if (list.matchingItems.length > 0) {
+      $('.no-result').hide()
+    } else {
+      $('.no-result').show()
+    }
+  });
+  $('#clear-btn').click(function () {
+    $('#search').val('');
+    userList.search();
+  });
 }
 
 
@@ -101,17 +170,3 @@ function calculateDistance(lat1, lon1, lat2, lon2, unit) {
 }
 
 
-let dropdown = $('#city_dropdown');
-let url1="https://pvk4498.github.io/garage-search-engine/data/city_list.json"
-dropdown.empty();
-
-dropdown.append('<option selected="true" disabled>Select Your City</option>');
-dropdown.prop('selectedIndex', 0);
-
-// Populate dropdown with list of provinces
-$.getJSON(url1, function (data) {
-  $.each(data, function (key, entry) {
-    console.log(data);
-    dropdown.append($('<option class="option">'+ entry +'</option>'));
-  })
-});
