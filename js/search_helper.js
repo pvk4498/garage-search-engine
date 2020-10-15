@@ -18,58 +18,40 @@ function getLocation(result) {
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(
       function (position) {
-
         for (i in result) {
-
           let current_lat = position.coords.latitude;
           let current_lon = position.coords.longitude;
           let json_lat = result[i].latitude;
           let json_lon = result[i].longitude;
-
           result[i]["distance"] = calculateDistance(current_lat, current_lon, result[i]["latitude"], result[i]["longitude"], "K");
-
         }
-        // console.log("before sorting");
-        console.dir(result);
-
+        populate_dropdown();
+        console.log(result)
         result.sort(function (a, b) {
           return a.distance - b.distance;
         });
-
-        // populate_dropdown(result);
-        populate_dropdown();
-
-        // let option = document.getElementById('city_dropdown').value;
-        // console.log(option);
-
         displayData(result);
-
-
       }, function (error) {
         // function is called when the user denies the permission for location
         console.log("user denied the permission");
         displayData(result);
       });
-
   } else {
     console.log("Geolocation is not supported by this browser.");
   }
-
 }
 
+// populates the dropdown on load
 
 function populate_dropdown() {
 
   let dropdown = $('#city_dropdown');
   let url1 = "https://pvk4498.github.io/garage-search-engine/data/city_list.json"
   dropdown.empty();
-
-
+  dropdown.append('<option>Select Your City </option>')
   dropdown.prop('selectedIndex', 0);
-
   $.getJSON(url1, function (data) {
     $.each(data, function (key, entry) {
-      // let values = data;
       dropdown.append($('<option>' + entry.city + '</option>'));
     })
 
@@ -77,51 +59,26 @@ function populate_dropdown() {
   });
 }
 
+// sorts result according to dropdown option
 
+let arr = [];
+function dropdown() {
+  arr.splice(0, arr.length);
+  let option = document.getElementById('city_dropdown').value;
+  console.log(option);
+  $.getJSON(url, function (data) {
+    for (let i in data) {
+      if (data[i]['city'] == option) {
+        arr.push(data[i]);
+      }
+    }
+  });
+  console.log(arr);
+  displayData(arr);
+}
 
-
-
-
-
-
-
-// let option = document.getElementById('city_dropdown').value;
-// console.log(option +" "+ result.city );
-
-// let matched_data = result.filter(function (item) {
-//   return result.city === option;
-// });
-
-// console.log(matched_data);
-// result = matched_data;
-// displayData(result);
-
-
-
-// // // Populate dropdown with list of provinces
-// // $.getJSON(url1, function (data) {
-// //   $.each(data, function (key, entry) {
-// //     console.log(data);
-// //     dropdown.append($('<option class="option">' + entry + '</option>'));
-// //   })
-// // });
-
-// let arr = [];
-
-// function myFunction() {
-//   // let data1=get_json_Data(url,myFunction);
-
-
-// }
-
-
-
-
-
-
-
+// populates the cards
 function displayData(result) {
-
   var options = {
     valueNames: [
       'id',
@@ -153,6 +110,7 @@ function displayData(result) {
 }
 
 
+// calculates the distance based on longitude and latitude
 function calculateDistance(lat1, lon1, lat2, lon2, unit) {
   var radlat1 = Math.PI * lat1 / 180
   var radlat2 = Math.PI * lat2 / 180
