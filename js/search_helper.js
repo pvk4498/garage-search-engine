@@ -26,7 +26,7 @@ function getLocation(result) {
           result[i]["distance"] = calculateDistance(current_lat, current_lon, result[i]["latitude"], result[i]["longitude"], "K");
         }
         populate_dropdown();
-        console.log(result)
+      
         result.sort(function (a, b) {
           return a.distance - b.distance;
         });
@@ -48,37 +48,71 @@ function populate_dropdown() {
   let dropdown = $('#city_dropdown');
   let url1 = "https://pvk4498.github.io/garage-search-engine/data/city_list.json"
   dropdown.empty();
-  dropdown.append('<option>Select Your City </option>')
   dropdown.prop('selectedIndex', 0);
   $.getJSON(url1, function (data) {
     $.each(data, function (key, entry) {
       dropdown.append($('<option>' + entry.city + '</option>'));
     })
-
-
   });
 }
 
 // sorts result according to dropdown option
 
-let arr = [];
 function dropdown() {
-  arr.splice(0, arr.length);
+  let arr = [];
   let option = document.getElementById('city_dropdown').value;
   console.log(option);
+  arr.splice(0, arr.length);
   $.getJSON(url, function (data) {
-    for (let i in data) {
-      if (data[i]['city'] == option) {
+    for (let i=0;i<data.length;i++) {
+      if (data[i].city == option) {
         arr.push(data[i]);
       }
+
     }
   });
   console.log(arr);
-  displayData(arr);
+  display(arr);
+  
+
 }
 
 // populates the cards
 function displayData(result) {
+  var options = {
+    valueNames: [
+      'id',
+      'name',
+      'address',
+      'city',
+      'contact',
+      'price',
+      { name: 'image', attr: 'src' },
+      { name: 'link', attr: 'href' }
+    ],
+    item: 'myitem',
+    page: 10,
+    pagination: true
+  };
+  var userList = new List('mylist', options, result);
+
+  userList.on('updated', function (list) {
+    if (list.matchingItems.length > 0) {
+      $('.no-result').hide()
+    } else {
+      $('.no-result').show()
+    }
+  });
+  $('#clear-btn').click(function () {
+    $('#search').val('');
+    userList.search();
+  });
+}
+
+
+
+
+function display(result) {
   var options = {
     valueNames: [
       'id',
@@ -126,5 +160,3 @@ function calculateDistance(lat1, lon1, lat2, lon2, unit) {
   if (unit == "N") { dist = dist * 0.8684 }
   return dist
 }
-
-
