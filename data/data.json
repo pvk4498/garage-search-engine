@@ -142,6 +142,18 @@
       "link":"view-detail-page.html?id=12",
       "longitude":"72.84241780000002",
        "latitude":"19.021324"
-  } 
+  },
+   {
+       "id":"13",
+       "name":"All-In-One Garage",
+      "address":"Wagholi",
+      "city":"Pune",
+      "contact":"9654758965",
+      "price":"₹590/service",
+       "image":"images/img.jpg",
+       "link":"view-detail-page.html?id=13",
+       "longitude":"74.081413",
+       "latitude":"17.902781"
+   }
    
 ]
