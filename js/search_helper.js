@@ -72,7 +72,7 @@ function dropdown() {
     }
   });
   console.log(arr);
-  display(arr);
+  displayData(arr);
   
 
 }
@@ -112,36 +112,7 @@ function displayData(result) {
 
 
 
-function display(result) {
-  var options = {
-    valueNames: [
-      'id',
-      'name',
-      'address',
-      'city',
-      'contact',
-      'price',
-      { name: 'image', attr: 'src' },
-      { name: 'link', attr: 'href' }
-    ],
-    item: 'myitem',
-    page: 10,
-    pagination: true
-  };
-  var userList = new List('mylist', options, result);
 
-  userList.on('updated', function (list) {
-    if (list.matchingItems.length > 0) {
-      $('.no-result').hide()
-    } else {
-      $('.no-result').show()
-    }
-  });
-  $('#clear-btn').click(function () {
-    $('#search').val('');
-    userList.search();
-  });
-}
 
 
 // calculates the distance based on longitude and latitude
