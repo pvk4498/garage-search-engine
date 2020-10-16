@@ -102,3 +102,6 @@ a.page:hover {
   border-radius: 20px;
   color: black;
 }
+.active-page{
+  text-decoration: underline;
+}
