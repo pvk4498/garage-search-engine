@@ -1,0 +1,135 @@
+[
+   {
+       
+      "name":"A1 Garage",
+      "address":"Pimpri",
+      "city":"Pune",
+      "contact":"9087654543",
+      "price":"₹500/service",
+       "image":"images/img.jpg",
+       "link":"view-detail-page.html?id=1",
+       "longitude":"73.585648",
+       "latitude":"20.797701"
+   },
+   {
+       "id":"2",
+      "name":"Mane Garage",
+      "address":"Kothrud",
+      "city":"Pune",
+      "contact":"908766565",
+      "price":"₹400/service",
+       "image":"images/img2.jpg",
+       "link":"view-detail-page.html?id=2",
+       "longitude":"73.807182",
+       "latitude":"18.509890"
+       
+   },{
+       "id":"3",
+      "name":"Saha Garage",
+      "address":"Pimpri",
+      "city":"Pune",
+      "contact":"2687654543",
+      "price":"₹300/service",
+       "image":"images/img.jpg",
+       "link":"view-detail-page.html?id=3",
+       "longitude":"73.585648",
+       "latitude":"20.797701"
+   },
+   {
+       "id":"4",
+      "name":"Shine Garage",
+      "address":"Karve nagar",
+      "city":"Pune",
+      "contact":"2687654543",
+      "price":"₹350/service",
+       "image":"images/img.jpg",
+       "link":"view-detail-page.html?id=4",
+       "longitude":"73.820297",
+       "latitude":"18.489759"
+   },
+    {
+        "id":"5",
+      "name":"Sadguru Garage",
+      "address":"Wakad",
+      "city":"Pune",
+      "contact":"9687654543",
+      "price":"₹550/service",
+        "image":"images/img.jpg",
+        "link":"view-detail-page.html?id=5",
+        "longitude":"73.585648",
+       "latitude":"20.797701"
+   },
+   {
+       "id":"6",
+      "name":"Ram Garage",
+      "address":"Wakad",
+      "city":"Pune",
+      "contact":"9687654543",
+      "price":"₹450/service",
+       "image":"images/img.jpg",
+       "link":"view-detail-page.html?id=6",
+       "longitude":"73.585648",
+       "latitude":"20.797701"
+   },
+   {
+       "id":"7",
+    "name":"Mauli Garage",
+      "address":"Katraj",
+      "city":"Pune",
+      "contact":"6958654543",
+      "price":"₹400/service",
+       "image":"images/img.jpg",
+       "link":"view-detail-page.html?id=7",
+       "longitude":"73.867744",
+       "latitude":"18.457533"
+   },
+   {
+       "id":"8",
+    "name":"Wheels Garage",
+      "address":"Karve nagar",
+      "city":"Pune",
+      "contact":"6958654543",
+      "price":"₹600/service",
+       "image":"images/img.jpg",
+       "link":"view-detail-page.html?id=8",
+       "longitude":"73.820297",
+       "latitude":"18.489759"
+   },
+   {
+       "id":"9",
+    "name":"Patne Garage",
+      "address":"Wagholi",
+      "city":"Pune",
+      "contact":"6958654543",
+      "price":"₹450/service",
+       "image":"images/img.jpg",
+       "link":"view-detail-page.html?id=9",
+       "longitude":"74.081413",
+       "latitude":"17.902781"
+   },
+   {
+       "id":"10",
+    "name":"Unity Garage",
+      "address":"Swargate",
+      "city":"Pune",
+      "contact":"6958654543",
+      "price":"₹250/service",
+       "image":"images/img.jpg",
+       "link":"view-detail-page.html?id=10",
+       "longitude":"73.856209",
+       "latitude":"18.496309"
+   },
+   {
+      "id":"11",
+   "name":"Sham Garage",
+     "address":"Katraj",
+     "city":"Pune",
+     "contact":"8968654543",
+     "price":"₹550/service",
+      "image":"images/img.jpg",
+      "link":"view-detail-page.html?id=11",
+      "longitude":"73.867744",
+       "latitude":"18.457533"
+  }
+   
+]

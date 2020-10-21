@@ -1,0 +1,14 @@
+[
+     {
+    "id":"1",
+ "name":"Disoza Autocare",
+   "address":"Dadar",
+   "city":"Mumbai",
+   "contact":"8968696583",
+   "price":"₹650/service",
+    "image":"images/img.jpg",
+    "link":"view-detail-page.html?id=1",
+    "longitude":"72.84241780000002",
+     "latitude":"19.021324"
+}
+]
